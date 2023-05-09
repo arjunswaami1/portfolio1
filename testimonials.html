@@ -1,0 +1,794 @@
+<html>
+    <head>
+        <title>Testimonials</title>
+
+<style>
+
+body{
+            background-image: url("12bg.jpg");
+            background-size: cover;
+        }
+
+#heading{
+    position:absolute; left: 550px; ; top: -10px;font-size:50px; font-family: verdana; background-color: rgb(200, 196, 245); border-radius: 12px;
+        }
+
+#mySidenav a {
+  position: absolute;
+  left: -100px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  font-weight: bolder;
+  font-family: arial;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#home {
+  top: 20px;
+  background-color: #04AA6D;
+  text-align: left;
+  font-size: 20px;
+}
+
+#about {
+  top: 80px;
+  background-color: #2196F3;
+  text-align: left;
+  font-size: 20px;
+}
+
+#resume {
+  top: 140px;
+  background-color: #f44336;
+  text-align: left;
+  font-size: 20px;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555;
+  text-align: left;
+  font-size: 15px;
+}
+
+.sidenav {
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 5px;
+  left: 40px;
+  background: transparent;
+  overflow-x: hidden;
+  padding: 15px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  background-color: rgb(189, 227, 250);
+  border: 1px solid black;
+  border-radius: 8px;
+  text-align: center;  
+}
+
+.sidenav a:hover {
+  color: #f71c1c;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#eheader{
+    position: absolute;
+    top: 100px;
+    left: 640px;
+    color: black;
+    font-family: verdana;
+    font-size: 40px;
+    background-color: rgb(145, 185, 190);
+    border-radius: 12px;
+}
+
+#edupoints{
+    position: absolute;
+    top: 170px;
+    left: 350px;
+    color: darkblue;
+    border: 1px solid black;
+    font-size: 25px;
+    font-family: calibri;
+}
+
+#cheader{
+    position: absolute;
+    top: 300px;
+    left: 460px;
+    color: black;
+    font-size: 40px;
+    background-color: rgb(160, 222, 224);
+    border-radius: 12px;
+}
+
+#certifications{
+    position: absolute;
+    top: 395px;
+    left: 465px;
+    color: darkblue;
+    border: 1px solid black;
+    font-size: 25px;
+    font-family: calibri;
+}
+
+#wheader{
+    position: absolute;
+    top: 850px;
+    left: 540px;
+    color: black;
+    font-size: 40px;
+    background-color: rgb(250, 195, 227);
+    border-radius: 12px;
+}
+
+#workshops{
+    position: absolute;
+    top: 940px;
+    left: 245px;
+    color: darkblue;
+    border: 1px solid black;
+    font-size: 25px;
+    font-family: calibri;
+}
+
+#iheader{
+    position: absolute;
+    top: 1180px;
+    left: 510px;
+    color: black;
+    font-size: 40px;
+    background-color: rgb(247, 181, 181);
+    border-radius: 12px;
+}
+
+#internships{
+    position: absolute;
+    top: 1270px;
+    left: 555px;
+    color: darkblue;
+    border: 1px solid black;
+    font-size: 25px;
+    font-family: calibri;
+}
+
+#oheader{
+    position: absolute;
+    top: 1440px;
+    left: 475px;
+    color: black;
+    font-size: 40px;
+    background-color: rgb(190, 179, 233);
+    border-radius: 12px;
+}
+
+#otherevents{
+    position: absolute;
+    top: 1530px;
+    left: 330px;
+    color: darkblue;
+    border: 1px solid black;
+    font-size: 25px;
+    font-family: calibri;
+}
+
+#ivheader{
+    position: absolute;
+    top: 1810px;
+    left: 610px;
+    color: black;
+    font-size: 40px;
+    background-color: rgb(168, 137, 147);
+    border-radius: 12px;
+}
+
+#industriesvisited{
+    position: absolute;
+    top: 1900px;
+    left: 435px;
+    color: darkblue;
+    border: 1px solid black;
+    font-size: 25px;
+    font-family: calibri;
+}
+
+td{
+    border: 1px solid black;
+}
+
+th{
+    border: 1px solid black;
+}
+
+.container {
+  width: 50%;
+  background-color: #ddd;
+  position: relative; left: 405px; top: 2150px;
+}
+
+.skills {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-family: calibri;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#skillsheader{
+    position: absolute;
+    top: 2215px;
+    left: 560px;
+    color: black;
+    font-size: 40px;
+    background-color: rgb(219, 210, 191);
+    border-radius: 12px;
+}
+
+.html {width: 80%; background-color: #26495c;}
+.cplusplus {width: 70%; background-color: #c4a35a;}
+.css {width: 60%; background-color: #c66b3d;}
+.js {width: 20%; background-color: #d9a5b3;}
+.python {width: 50%; background-color: #1868ae;}
+.sqlfundamentals {width: 15%; background-color: #ff9a8d;}
+
+#pointscale {
+    position: absolute;
+    top: 2275px;
+    left: 680px;
+    color: black;
+    font-size: 15px;
+}
+
+#pheader {
+    position: absolute;
+    top: 2940px;
+    left: 680px;
+    color: black;
+    font-size: 40px;
+    background-color: rgb(183, 176, 207);
+    border-radius: 12px;
+}
+
+#project1 {
+    position: absolute;
+    top: 3050px;
+    left: 300px;
+    color: black;
+    font-size: 40px;
+}
+
+#projectd1 {
+    position: absolute;
+    top: 3060px;
+    left: 700px;
+    color: darkblue;
+    font-size: 35px;
+}
+
+#duration1 {
+    position: absolute;
+    top: 3100px;
+    left: 300px;
+    color: black;
+    font-size: 40px;
+}
+
+#durationd1 {
+    position: absolute;
+    top: 3110px;
+    left: 700px;
+    color: darkblue;
+    font-size: 35px;
+}
+
+#technology1 {
+    position: absolute;
+    top: 3150px;
+    left: 300px;
+    color: black;
+    font-size: 40px;
+}
+
+#technologyd1 {
+    position: absolute;
+    top: 3160px;
+    left: 700px;
+    color: darkblue;
+    font-size: 35px;
+}
+
+#description1 {
+    position: absolute;
+    top: 3200px;
+    left: 300px;
+    color: black;
+    font-size: 40px;
+}
+
+#project1description{
+    position: absolute;
+    top: 3220px;
+    left: 700px;
+    color: darkblue;
+    font-size: 25px;
+    text-align: justify;
+    font-family: Georgia;
+}
+
+#project2 {
+    position: absolute;
+    top: 3730px;
+    left: 300px;
+    color: black;
+    font-size: 40px;
+}
+
+#projectd2 {
+    position: absolute;
+    top: 3740px;
+    left: 700px;
+    color: darkblue;
+    font-size: 35px;
+}
+
+#duration2 {
+    position: absolute;
+    top: 3785px;
+    left: 300px;
+    color: black;
+    font-size: 40px;
+}
+
+#durationd2 {
+    position: absolute;
+    top: 3797px;
+    left: 700px;
+    color: darkblue;
+    font-size: 35px;
+}
+
+#technology2 {
+    position: absolute;
+    top: 3840px;
+    left: 300px;
+    color: black;
+    font-size: 40px;
+}
+
+#technologyd2 {
+    position: absolute;
+    top: 3850px;
+    left: 700px;
+    color: darkblue;
+    font-size: 35px;
+}
+
+#description2 {
+    position: absolute;
+    top: 3930px;
+    left: 300px;
+    color: black;
+    font-size: 40px;
+}
+
+#project2description {
+    position: absolute;
+    top: 3950px;
+    left: 700px;
+    color: darkblue;
+    font-size: 25px;
+    text-align: justify;
+    font-family: Georgia;
+}
+
+#ieheader {
+    position: absolute;
+    top: 4360px;
+    left: 505px;
+    color: black;
+    font-size: 40px;
+    background-color: rgb(214, 178, 205);
+    border-radius: 12px;
+}
+
+#iedescription {
+    position: absolute;
+    top: 4440px;
+    left: 260px;
+    color: darkblue;
+    font-size: 30px;
+    text-align: justify;
+    font-family: Georgia;
+}
+
+#hoheader {
+    position: absolute;
+    top: 4850px;
+    left: 700px;
+    color: black;
+    font-size: 40px;
+    background-color: rgb(236, 173, 173);
+    border-radius: 12px;
+}
+
+#hobbiesd {
+    position: absolute;
+    top: 4940px;
+    left: 450px;
+    color: darkblue;
+    font-size: 30px;
+    font-family: Georgia;
+}
+
+</style>
+ 
+    </head>
+    <body>
+
+          <h1 id="heading">TESTIMONIALS</h1>
+
+          <div class="sidenav">
+
+                <a href="#eheader">Academics</a></br>
+                <a href="#cheader">Certifications</a></br>
+                <a href="#wheader">Workshops Attended</a></br>
+                <a href="#iheader">Internships Undergone</a></br>
+                <a href="#oheader">Other Events Participated</a></br>
+                <a href="#ivheader">Industry Visits</a></br>
+                <a href="#skillsheader">Programming Skills</a></br>
+                <a href="#pheader">Projects</a></br>
+                <a href="#ieheader">International Exposure</a></br>
+                <a href="#hoheader">Hobbies</a>
+
+          </div>
+
+          <div id="mySidenav" class="nav">
+            <a href="Home.html" id="home">HOME</a>
+            <a href="About.html" id="about">ABOUT</a>
+            <a href="Resume.html" id="resume">RESUME</a>
+            <a href="Contact.html" id="contact">CONTACT</a>
+          </div>
+
+          <h1 id="eheader">ACADEMICS</h1>
+
+          <ul id="edupoints">
+
+            <li>Completed SSC(State Board - Tamilnadu) in 2016 with 71.4%</li>
+            <li> Completed HSC(State Board - Tamilnadu) in 2018 with 80%</li>
+            <li>Persuing Bachelors of Engineering in the stream of Cyber Security(2022 - 2026)&nbsp</li>
+
+          </ul>
+
+          <h1 id="cheader">CERTIFICATIONS COMPLETED</h1>
+
+          <table id="certifications">
+
+            <thead>
+            <th>Organization</th>
+            <th>Course Name</th>
+            <th>Year</th>
+            </thead>
+            
+            <tr>
+                <td>Cisco</td>
+                <td>Basic Networking</td>
+                <td>APR &nbsp&nbsp&nbsp- 2023&nbsp</td>
+            </tr>
+            
+            <tr>
+                <td>Cisco</td>
+                <td>Cyber Security Essentials</td>
+                <td>FEB   &nbsp- 2023&nbsp</td>
+            </tr>
+            
+            <tr>
+                <td>Skillrack&nbsp</td>
+                <td>Python3.x 50 Challenges</td>
+                <td>DEC &nbsp&nbsp&nbsp- 2022&nbsp</td>
+            </tr>
+            
+            <tr>
+                <td>Cisco</td>
+                <td>Python Essentials 1</td>
+                <td>DEC&nbsp&nbsp- 2022&nbsp</td>
+            </tr>
+            
+            <tr>
+                <td>Cisco</td>
+                <td>Intro. to Cyber Security</td>
+                <td>NOV &nbsp- 2022&nbsp</td>
+            </tr>
+            
+            <tr>
+                <td>Sololearn</td>
+                <td>Data Science</td>
+                <td>OCT &nbsp- 2022&nbsp</td>
+            </tr>
+            
+            <tr>
+                <td>Skillrack</td>
+                <td>SQL - Basics(Std)</td>
+                <td>OCT &nbsp&nbsp&nbsp- 2022&nbsp</td>
+            </tr>
+            
+            <tr>
+                <td>Skillrack</td>
+                <td>Python 3.x Programming Course</td>
+                <td>SEP &nbsp&nbsp- 2022&nbsp</td>
+            </tr>
+            
+            <tr>
+                <td>Sololearn</td>
+                <td>C++</td>
+                <td>SEP &nbsp&nbsp&nbsp- 2022&nbsp</td>
+            </tr>
+            
+            <tr>
+                <td>Sololearn</td>
+                <td>Java & Java Scrip</td>
+                <td>AUG &nbsp&nbsp- 2022&nbsp</td>
+            </tr>
+            
+            <tr>
+                <td>Sololearn</td>
+                <td>HTML</td>
+                <td>AUG &nbsp- 2022&nbsp</td>
+            </tr>
+            
+            </table>
+
+        </br>
+        </br>
+
+            <h1 id="wheader">WORSHOPS ATTENDED</h1>
+            
+            <table id="workshops">
+                      
+                <thead>
+                    <th>Organization</th>
+                    <th>Topic</th>
+                    <th>Year</th>
+                </thead>
+                
+                <tr>
+                    <td>IIT Madras - Techobyte</td>
+                    <td>Ethical Hacking with Cyber Security</td>
+                    <td>SEP &nbsp&nbsp- 2019&nbsp</td>
+                </tr>
+            
+                <tr>
+                    <td>NSDC</td>
+                    <td>Automotive Safety System with Bosch</td>
+                    <td>SEP&nbsp&nbsp - 2020&nbsp</td>
+                </tr>
+            
+                <tr>
+                    <td>Skyy Rider Institutions</td>
+                    <td>Emission Control Technology and Havey Commercial Vehicles&nbsp</td>
+                    <td>SEP&nbsp&nbsp - 2019&nbsp</td>
+                </tr>
+            
+                <tr>
+                    <td>Sastra University</td>
+                    <td>AI - Robotics</td>
+                    <td>FEB &nbsp&nbsp- 2019&nbsp</td>
+                </tr>
+            
+                <tr>
+                    <td>Chennai Institute of Technology&nbsp</td>
+                    <td>Research Scopes in ECE</td>
+                    <td>MAY - 2020&nbsp</td>
+                </tr>
+            
+            </table>
+            
+            </br>
+            </br>
+
+            <h1 id="iheader">INTERNSHIPS UNDERGONE</h1>
+            
+            <table id="internships">
+            
+                <thead>
+                    <th>Domain</th>
+                    <th>Organization</th>
+                    <th>Year</th>
+                </thead>
+            
+                <tr>
+                    <td>Telecom</td>
+                    <td>Trell</td>
+                    <td>FEB - 2019&nbsp</td>
+                </tr>
+            
+           
+            </table>
+            
+            </br>
+            </br>
+
+            <h1 id="oheader">OTHER EVENTS PARTICIPATED</h1>
+            
+            <table id="otherevents">
+            
+                <thead>
+                    <th>Organization</th>
+                    <th>Event</th>
+                    <th>Year</th>
+                </thead>
+            
+                <tr>
+                    <td>IIT Bombay - Aakaar</td>
+                    <td>IOT Challenge 2020</td>
+                    <td>FEB &nbsp&nbsp- 2019&nbsp</td>
+                </tr>
+            
+                <tr>
+                    <td>Saveetha University</td>
+                    <td>BOT - O - TRON</td>
+                    <td>SEP&nbsp&nbsp - 2019&nbsp</td>
+                </tr>
+            
+                <tr>
+                    <td>Chennai Institute of Technology &nbsp</td>
+                    <td>Additive Manufacturing</td>
+                    <td>MAY - 2020&nbsp</td>
+                </tr>
+            
+                <tr>
+                    <td>Chennai Institute of Technology &nbsp</td>
+                    <td>Research Challenges in Data Mining</td>
+                    <td>MAY - 2020&nbsp</td>
+                </tr>
+            
+                <tr>
+                    <td>Chennai Institute of Technology &nbsp</td>
+                    <td>Intro to Image Quality Measures</td>
+                    <td>MAY - 2020&nbsp</td>
+                </tr>
+            
+                <tr>
+                    <td>Chennai Institute of Technology &nbsp</td>
+                    <td>Integrating Nano Sensors to IOT Platform &nbsp</td>
+                    <td>MAY - 2020&nbsp</td>
+                </tr>
+            
+            </table>
+            
+            </br>
+            </br>
+
+
+        <h1 id="skillsheader">PROGRAMMING SKILLS</h1>
+
+        <h1 id="pointscale">(Self Scoring on a 10 Point Scale)</h1>
+
+        <div class="container">
+        <div class="skills html">HTML</div>
+        </div>
+
+    </br>
+    </br>
+
+        <div class="container">
+        <div class="skills css">CSS</div>
+        </div>
+
+    </br>
+    </br>
+
+        <div class="container">
+        <div class="skills js">JAVA SCRIPT</div>
+        </div>
+
+    </br>
+    </br>
+
+        <div class="container">
+        <div class="skills python">PYTHON</div>
+        </div>
+
+    </br>
+    </br>
+
+        <div class="container">
+        <div class="skills cplusplus">C++</div>
+        </div>
+ 
+    </br>
+    </br>
+
+        <div class="container">
+        <div class="skills sqlfundamentals">SQL</div>
+        </div>
+
+    </br>
+    </br>
+
+    
+
+    <h2 id="pheader">PROJECTS</h2>
+
+    <h2 id="project1">Project Title &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</h2>
+    <h2 id="duration1">Duration &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</h2>
+    <h2 id="technology1">Technology Used &nbsp&nbsp&nbsp:</h2>
+    <h2 id="description1">Description &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</h2>
+    <h2 id="projectd1">Spider Quadruped</h2>
+    <h2 id="durationd1">2 Months</h2>
+    <h2 id="technologyd1">Arduino, 3D Printing, Robotics, AI</h2>
+
+    <p id="project1description"> Legged robots are more useful and efficient in</br>
+                                the uneven terrains when compared with wheeled</br>
+                                robots as they cannot climb the rocks and rough</br>
+                                surfaces easily. The legged robots like Quadruped</br>
+                                robots can climb the terrains like rocks, sludge,</br>
+                                incline and decline surfaces easily as their mechanised</br>
+                                legs are made for these surfaces. Quad Robots can be</br>
+                                made in all different shape and sizes. The first ever</br>
+                                quad robot was made in the shape of a dog. The</br>
+                                following Quadruped robot was made in the shape of a</br>
+                                spider. This is a basic prototype quadruped robot. These</br>
+                                robots can be controlled by Wi-Fi or Bluetooth and it</br>
+                                can be automated by Artificial Intelligence. </p>
+
+    <h2 id="ieheader">INTERNATIONAL EXPOSURE</h2>
+
+    <p id="iedescription"> Basically I love travelling and exploring new geographies. My maiden international trip</br>
+        was to Germany in the year 2017. During this trip I had been to historical cities like</br>
+        Frankfurt, Koln, Dusseldorf, Koblenz,etc. As an extension of this trip, I also had</br>
+        oppurtunity to visit two more Schengen Countries namely Switzerland and Netherlands.</br>
+        Places visited in Switzerland includes Zurich, Stuttgart and Rhinefalls. I had an</br>
+        Oppurtunity to visit Amsterdam during my Neteherlands visit. During my educational</br>
+        Tour hosted by College I had an oppurtunity to revisit Germany and Switzerland.</br>
+        During this trip I had visited Eiffle Tower along with my college friends which was</br>
+        an memorable event in my lifetime. My third International Trip was to UAE during 2019.</br>
+        During this trip I could visit Burj Khalifa which is the tallest skyscrapper in the world.</br>
+        These international trips given me an exposure to different cultures and people interactions. </p>
+
+    <h2 id="hoheader">HOBBIES</h2>
+
+    <ul id="hobbiesd">
+
+        <li>Long Driving</li></br>
+        <li>Creating Youtube Videos</li></br>
+        <li>Playing Cricket</li></br>
+        <li>Listening Music</li></br>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+    </ul>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+    </body>
+</html>

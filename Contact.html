@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+        <style>
+
+body{
+      background-image: url("12bg.jpg");
+      background-size: cover;
+    }
+
+#heading{
+    position: absolute; left: 550px; ; top: 10px;font-size:50px; font-family: verdana; background-color: rgb(240, 223, 236); border-radius: 12px; color: darkblue;
+}
+
+input[type=text], select, textarea {
+font-family:verdana;
+position: relative;
+  width: 20%;
+  padding: 5px; 
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing:content-box;
+  margin-top: 1px;
+  margin-bottom: 15px;
+  resize: vertical
+}
+
+input[type=submit] {
+  position: relative; bottom: 45px;
+  font-family: Verdana;
+  background-color:gray;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor:pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #b694ec;
+}
+
+body{
+        width: 100%;
+        text-align: center;
+    }
+
+.cnct{
+    position: relative; top: 100px;
+    min-height: 100vh;
+    font-family: verdana;
+    font-variant-caps: all-petite-caps;
+    font-size: 40px;
+    color: black;
+}
+
+.contact{
+    position: fixed;
+    bottom: 225px;
+    left: 140px;
+}
+
+.contact1{
+    position: fixed;
+    bottom: 230px;
+    left: 1100px;
+}
+
+#mySidenav a {
+  position: absolute;
+  left: -100px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  font-weight: bolder;
+  font-family: arial;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#home {
+  top: 20px;
+  background-color: #04AA6D;
+  text-align: left;
+  font-size: 20px;
+}
+
+#about {
+  top: 80px;
+  background-color: #2196F3;
+  text-align: left;
+  font-size: 20px;
+}
+
+#testimonials {
+  top: 140px;
+  background-color: #f44336;
+  text-align: left;
+  font-size: 10px;
+}
+
+#resume {
+  top: 200px;
+  background-color: #555;
+  text-align: left;
+  font-size: 17px;
+}
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1 id="heading">CONTACT FORM</h1>
+
+        <div class="cnct">
+
+        <label for="fname">Name</label></br>
+        <input type="text" id="fname" name="firstname" placeholder=""required>
+
+      </br>
+
+      <label for="lname">Contact Number</label></br>
+      <input type="text" id="number" name="number" placeholder=""required>
+
+    </br>
+
+  
+      <label for="country">Email ID</label></br>
+      <input type="text" id="emailid" name="emailid" placeholder=""required>
+
+    </br>
+
+      <label for="subject">Subject</label></br>
+      <textarea id="subject" name="subject" placeholder="              Please Leave a Message" style="height:200px"required></textarea>
+
+        </div>
+
+        <div class="contact">
+      
+          <img id="contact" src="contact.jpg" width="300px" height="300px">
+  
+  </div>
+
+  <div class="contact1">
+        
+    <img id="contact" src="contact1.png" width="300px" height="300px">
+
+</div>
+  
+      <input type="submit" value="Submit">
+
+      <div id="mySidenav" class="nav">
+        <a href="Home.html" id="home">HOME</a>
+        <a href="About.html" id="about">ABOUT</a>
+        <a href="Testimonials.html" id="testimonials">TESTIMONIALS</a>
+        <a href="Resume.html" id="resume">RESUME</a>
+      </div>
+
+    </body>
+
+</html>
